@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bark: #7c4d27;
+  --color-bark-dark: #5e3a1d;
+  --color-bark-deep: #462c15;
+  --color-sand: #ae8e62;
+  --color-sand-light: #cfb896;
+  --color-paper: #faf7f2;
+  --color-paper-warm: #f3ede3;
+  --color-ink: #2b2018;
+  --color-ink-soft: #5c4f43;
+
+  --font-display: "Fraunces Variable", Georgia, serif;
+  --font-sans: "Figtree Variable", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  @apply bg-white text-ink font-sans antialiased;
+}
+
+.eyebrow {
+  @apply font-sans text-[0.72rem] font-semibold uppercase tracking-[0.28em] text-sand;
+}
+
+.display {
+  font-family: var(--font-display);
+  font-variation-settings: "SOFT" 60, "WONK" 0;
+}
+
+.prose-blocks p {
+  @apply mt-4 leading-relaxed text-ink-soft;
+}
+
+.prose-blocks ul {
+  @apply mt-4 space-y-2;
+}
+
+.prose-blocks ul li {
+  @apply relative pl-6 leading-relaxed text-ink-soft;
+}
+
+.prose-blocks ul li::before {
+  content: "";
+  @apply absolute left-0 top-[0.62em] h-1.5 w-1.5 rounded-full bg-sand;
+}
+
+.prose-blocks h3 {
+  @apply mt-8 text-lg font-semibold text-bark-dark;
+  font-family: var(--font-display);
+  font-variation-settings: "SOFT" 60, "WONK" 0;
+}
+
+:focus-visible {
+  @apply outline-2 outline-offset-2 outline-bark;
+}
+
+details.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+details.faq summary::marker {
+  content: "";
+}
+
+details.faq[open] .faq-icon {
+  transform: rotate(45deg);
+}
+
+.faq-icon {
+  transition: transform 0.2s ease;
+}
