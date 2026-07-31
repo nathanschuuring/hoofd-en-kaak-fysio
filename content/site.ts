@@ -15,7 +15,7 @@ export const site = {
   therapeut: "Lysanne Visscher",
   phone: "06 44 07 25 88",
   phoneHref: "tel:+31644072588",
-  email: "fysiotherapeutvisscher@outlook.com",
+  email: "lysanne@hoofdenkaakfysio.nl",
   linkedin: "https://www.linkedin.com/in/lysanne-visscher-920939109/",
   kvk: "94629366",
   btw: "NL005099116B87",
