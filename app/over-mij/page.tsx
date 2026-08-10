@@ -39,7 +39,7 @@ export default function OverMijPage() {
             </h2>
             <div className="prose-blocks">
               <p>
-                Mijn naam is Nathan Visscher en ik ben een gespecialiseerde
+                Mijn naam is Lysanne Visscher en ik ben een gespecialiseerde
                 orofaciaal en manueel therapeut met een sterke focus op complexe
                 klachten in het hoofd-halsgebied. Sinds en tijdens mijn afstuderen
                 als MSc Orofaciaal en Manueel therapeut heb ik mij verder verdiept
