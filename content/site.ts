@@ -26,16 +26,10 @@ export const site = {
 
 export const locaties = [
   {
-    naam: "Maatschap den Boon-Stefels",
-    detail: "voorheen Slot-Keerssemeeckers",
-    plaats: "Nunspeet",
+    naam: "Fysio- en Manueel Therapie Van den Bosch",
+    detail: "locatie AHOED",
+    plaats: "Hasselt",
     dagen: "Maandag",
-  },
-  {
-    naam: "FysioSmile",
-    detail: "locatie ZGT",
-    plaats: "Almelo",
-    dagen: "Dinsdag",
   },
   {
     naam: "FysioSmile",
@@ -47,7 +41,7 @@ export const locaties = [
     naam: "Fysio- en Manueel Therapie Van den Bosch",
     detail: "",
     plaats: "Hasselt",
-    dagen: "Donderdag & vrijdag",
+    dagen: "Vrijdag",
   },
 ];
 

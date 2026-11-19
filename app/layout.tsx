@@ -32,7 +32,7 @@ const jsonLd = {
   medicalSpecialty: "Physiotherapy",
   description:
     "Specialistische orofaciale en manuele fysiotherapie voor klachten in het hoofd-halsgebied.",
-  areaServed: ["Nunspeet", "Almelo", "Hardenberg", "Hasselt"],
+  areaServed: ["Hasselt", "Hardenberg"],
 };
 
 export default function RootLayout({
