@@ -36,7 +36,7 @@ export default function HomePage() {
               </Link>
             </div>
             <p className="mt-8 text-sm text-ink-soft">
-              Behandellocaties in Nunspeet, Almelo, Hardenberg en Hasselt
+              Behandellocaties in Hasselt en Hardenberg
             </p>
           </div>
           <div className="relative hidden justify-center lg:flex">
@@ -183,7 +183,7 @@ export default function HomePage() {
                 Waar kunt u terecht?
               </h2>
               <p className="mt-4 leading-relaxed text-ink-soft">
-                Ik werk op vier praktijklocaties in de regio. Afspraken kunnen
+                Ik werk op meerdere praktijklocaties in de regio. Afspraken kunnen
                 telefonisch of via de website van de betreffende praktijk worden
                 gemaakt.
               </p>
@@ -195,9 +195,9 @@ export default function HomePage() {
               Alle locatie-informatie
             </Link>
           </div>
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {locaties.map((l) => (
-              <div key={`${l.naam}-${l.plaats}`} className="rounded-2xl bg-white p-6">
+              <div key={`${l.dagen}-${l.naam}-${l.plaats}`} className="rounded-2xl bg-white p-6">
                 <p className="text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-sand">
                   {l.dagen}
                 </p>

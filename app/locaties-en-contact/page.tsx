@@ -5,7 +5,7 @@ import { Eyebrow } from "@/components/ui";
 export const metadata: Metadata = {
   title: "Locaties & contact",
   description:
-    "Behandellocaties in Nunspeet, Almelo, Hardenberg en Hasselt. Neem contact op via 06 44 07 25 88 of fysiotherapeutvisscher@outlook.com voor een afspraak.",
+    `Behandellocaties in Hasselt en Hardenberg. Neem contact op via ${site.phone} of ${site.email} voor een afspraak.`,
   alternates: { canonical: "/locaties-en-contact" },
 };
 
@@ -19,7 +19,7 @@ export default function LocatiesContactPage() {
             Waar kunt u terecht?
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-ink-soft">
-            Ik werk op vier praktijklocaties in de regio. Afspraken kunnen
+            Ik werk op meerdere praktijklocaties in de regio. Afspraken kunnen
             telefonisch of via de websites van de praktijklocaties worden gemaakt.
             Kunt u niet naar de praktijk komen? Behandeling aan huis is in overleg
             mogelijk.
@@ -28,10 +28,10 @@ export default function LocatiesContactPage() {
       </div>
 
       <section className="mx-auto max-w-6xl px-5 py-14 lg:px-8" aria-label="Praktijklocaties">
-        <div className="grid gap-5 sm:grid-cols-2">
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {locaties.map((l) => (
             <div
-              key={`${l.naam}-${l.plaats}`}
+              key={`${l.dagen}-${l.naam}-${l.plaats}`}
               className="rounded-2xl border border-paper-warm p-7"
             >
               <p className="text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-sand">
